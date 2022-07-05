@@ -2,10 +2,16 @@
     box-sizing: border-box;
 }
 
+:root {
+  --maincolor: slateblue;
+  --textcolor: aliceblue;
+  --dark: rgb(62, 62, 62);
+}
+
 body {
     font-family: 'Times New Roman', Times, serif;
     margin: 1px;
-    background-color: cornflowerblue;
+    background-color: var(--maincolor);
 }
 
 header {
@@ -13,6 +19,7 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    color: var(--textcolor);
 }
 
 h1 {
@@ -38,7 +45,7 @@ nav ul {
 
 main {
     display: block;
-    background-color: aliceblue;
+    background-color: var(--textcolor);
     padding-top: 5px;
 
 }
@@ -50,12 +57,18 @@ main {
     padding: 1px;
     border-style: solid;
     border-width: 1px;
-    background-color: slateblue;
+    background-color: var(--maincolor);
+    float: left;
+    position: relative;
 }
 
 .bio h2 {
-    color: rgb(62, 62, 62);
+    color: var(--dark);
     text-decoration: underline;
+}
+
+.bio p {
+    color: var(--textcolor);
 }
 
 .business {
@@ -74,11 +87,11 @@ footer {
 }
 
 h3 {
-
+    color: var(--textcolor);
 }
 
 footer ul {
-
+    
 }
 
 
