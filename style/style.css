@@ -3,14 +3,16 @@
 }
 
 body {
-
+    font-family: 'Times New Roman', Times, serif;
+    margin: 1px;
+    background-color: cornflowerblue;
 }
 
 header {
-    direction: flex;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 3px;
 }
 
 h1 {
@@ -18,25 +20,42 @@ h1 {
 }
 
 nav {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
     border-style: ridge;
     border-width: 1px;
     border-color: black;
-    padding: 5px;
-    width: 30%;
+    padding: 3px;
+    width: 50%;
     float: right;
+    position: relative;
 }
 
 nav ul {
-    
+    display: inline-flex;
+    flex-direction: row;
 }
 
 main {
+    display: block;
+    background-color: aliceblue;
+    padding-top: 5px;
 
 }
 
 .bio {
+    flex: 1 0 0;
+    text-align: center;
+    margin: 5px;
+    padding: 1px;
+    border-style: solid;
+    border-width: 1px;
+    background-color: slateblue;
+}
 
+.bio h2 {
+    color: rgb(62, 62, 62);
+    text-decoration: underline;
 }
 
 .business {
@@ -48,7 +67,10 @@ main {
 }
 
 footer {
-
+    display: inline-flex;
+    flex-direction: column;
+    float: inline-end;
+    position: relative;
 }
 
 h3 {
