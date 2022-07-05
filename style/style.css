@@ -10,7 +10,7 @@
 }
 
 body {
-    box-sizing: border-box;
+    margin: 0px;
 }
 
 header {
@@ -65,17 +65,24 @@ main {
 }
 
 footer {
-  
-}
-
-footer ul
-
-h3 {
-    
+    display: block;
+    flex-wrap: wrap;
+    padding: 25px;
+    background-color: var(--front);
 }
 
 footer ul {
-    
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-evenly;
+    list-style: inside;
+    color: var(--textcolor);
+}
+
+h3 {
+    display: block;
+    margin: 5px;
+    color: var(--textcolor); 
 }
 
 @media screen and (max-width: 992px){
