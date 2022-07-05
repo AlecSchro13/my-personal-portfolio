@@ -1,5 +1,5 @@
 * {
-    background-color: rgb(147, 129, 246);
+    box-sizing: border-box;
 }
 
 header {
@@ -7,9 +7,22 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 3px;
-    color: white;
 }
 
 h1 {
     text-align: center;
+}
+
+nav {
+    display: block;
+    border-style: ridge;
+    border-width: 1px;
+    border-color: black;
+    padding: 5px;
+    width: 30%;
+    float: right;
+}
+
+nav ul {
+    
 }
