@@ -1,0 +1,15 @@
+* {
+    background-color: rgb(147, 129, 246);
+}
+
+header {
+    direction: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+}
