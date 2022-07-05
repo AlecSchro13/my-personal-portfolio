@@ -10,6 +10,7 @@
 }
 
 body {
+    display: grid;
     margin: 0px;
     border-style: double;
     border-width: 2px;
@@ -17,8 +18,7 @@ body {
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
+    display: block;
     padding: 50px;
     align-items: center;
     border-style: solid;
@@ -30,9 +30,13 @@ header {
 }
 
 h1 {
-    display: block;
+    display: inline-flex;
     text-decoration: underline;
     font-size: 200%;
+}
+
+.romeo {
+    display: inline;
 }
 
 nav {
@@ -46,67 +50,16 @@ nav, ul {
     margin-block-end: 5px;
 }
 
-
-main {
-    margin-top: 5px;
-}
-
-.bio {
-    display: inline;
-    width: 100%;
-    text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-.bio, h2 {
-   display: flex;
-   flex-wrap: nowrap;
-   border: 50px;
-}
-
-.bio, p {
-    display: flex;
-    float: right;
-    position: relative;
-}
-
-.business, .html, .style, .Java, .personal {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    margin: 10px;
-    padding: 10px;
-    width: 50%;
-    height: 100px;
-    border-style: solid;
-    border-color: var(--maincolor);
-    background-color: var(--textcolor);
-}
-
-.business, .style, .personal {
-    float: right;
-}
-
-.html, .Java {
-    position: relative;
-}
-
-.portfolio {
-   display: block;
-   border-style: none;
-   position: relative;
-   margin: -8px;
-   border-color: var(--maincolor);
-    color: var(--front); 
-}
-
 footer {
-    display: inline-flex;
+    display: inline;
+    position: relative;
     background-color: var(--front);
     background: linear-gradient(30deg, #3f87a6, #ebf8e1, #241d8a);
 }
 
 footer, ul {
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
 }
 
