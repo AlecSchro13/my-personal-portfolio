@@ -5,87 +5,50 @@
 :root {
   --maincolor: slateblue;
   --textcolor: aliceblue;
-  --dark: rgb(62, 62, 62);
-  --
+  --behind: rgb(62, 62, 62);
+  --front: rgb(104, 141, 200);
 }
 
 body {
-    font-family: 'Times New Roman', Times, serif;
-    margin: 1px;
-    background-color: var(--maincolor);
+   display: flexbox;
 }
 
 header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    color: var(--textcolor);
+
 }
 
 h1 {
-    text-align: center;
+ 
 }
 
 nav {
-    display: flex;
-    flex-wrap: wrap;
-    border-style: ridge;
-    border-width: 1px;
-    border-color: black;
-    padding: 3px;
-    width: 50%;
-    float: right;
-    position: relative;
+
 }
 
 nav ul {
-    display: inline-flex;
-    flex-direction: row;
+
 }
 
 main {
-    display: block;
-    padding-top: 5px;
+ 
 
 }
 
 .bio {
-    display: block;
-    flex: auto;
-    text-align: center;
-    margin: 50px;
-    border-style: solid;
-    border-width: 1px;
-    background-color: rgb(104, 141, 200);
-    float: left;
-    width: 50%;
-    position: relative;
-    border-color: var(--textcolor);
+;
 }
 
 .bio h2 {
-    color: var(--dark);
-    text-decoration: underline;
+   
+    
 }
 
 .bio p {
-    display: flex;
-    flex-wrap: wrap;
-    color: var(--textcolor);
+    
 }
 
 .business {
-    display: block;
-    flex-wrap: wrap;
-    padding: 33px;
-    float: right;
-    position: relative;
-    border-style: solid;
-    border-width: 1px;
-    width: 50%;
-    border-color: var(--textcolor);
-    background-color: ;
+   
 }
 
 .business h2 {
@@ -97,17 +60,20 @@ main {
 }
 
 footer {
-    display: inline-flex;
-    flex-direction: column;
-    float: inline-end;
-    position: relative;
+  
 }
 
+footer ul
+
 h3 {
-    color: var(--textcolor);
+    
 }
 
 footer ul {
+    
+}
+
+@media screen {
     
 }
 
