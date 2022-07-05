@@ -10,15 +10,20 @@
 }
 
 body {
-   display: flexbox;
+    box-sizing: border-box;
 }
 
 header {
-
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 50px;
+    background-color: var(--front);
+    color: var(--textcolor);
 }
 
 h1 {
- 
+    display: block;
 }
 
 nav {
@@ -35,7 +40,7 @@ main {
 }
 
 .bio {
-;
+
 }
 
 .bio h2 {
@@ -73,8 +78,20 @@ footer ul {
     
 }
 
-@media screen {
-    
+@media screen and (max-width: 992px){
+    .bio .business .personal {
+        max-width: 100%;
+    }
 }
 
+@media screen and (max-width: 768px) {
+    .bio .business .personal {
+        max-width: fit-content;
+    }
+}
 
+@media screen and (max-width: 592px) {
+    .bio .business .personal {
+        max-width: fit-content;
+    }
+}
