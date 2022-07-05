@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+body {
+
+}
+
 header {
     direction: flex;
     justify-content: space-between;
@@ -26,3 +30,33 @@ nav {
 nav ul {
     
 }
+
+main {
+
+}
+
+.bio {
+
+}
+
+.business {
+
+}
+
+.personal {
+
+}
+
+footer {
+
+}
+
+h3 {
+
+}
+
+footer ul {
+
+}
+
+
