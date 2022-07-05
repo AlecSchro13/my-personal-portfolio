@@ -26,6 +26,7 @@ header {
     border-color: black;
     background-color: var(--front);
     color: var(--textcolor);
+    background: linear-gradient(30deg, #3f87a6, #ebf8e1, #241d8a);
 }
 
 h1 {
@@ -39,8 +40,7 @@ nav {
 }
 
 nav ul {
-    display: flex;
-    justify-content: space-between;
+    display: list-item;
     list-style: none;
     margin-block-start: 5px;
     margin-block-end: 5px;
@@ -52,11 +52,10 @@ main {
 }
 
 .bio {
-    display: inline-flex;
-    flex-wrap: wrap;
+    display: inline;
     width: 100%;
-    justify-content: center;
     text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .bio h2 {
@@ -74,27 +73,41 @@ main {
 .project {
     display: flex;
     flex-wrap: wrap;
-    align-content: flex-start;
+    flex-direction: column;
+    align-content: center;
+    position: relative;
     margin: 10px;
-    padding: 5px;
-    width: 400px;
-    height: 400px;
+    padding: 10px;
+    width: 50%;
+    height: 100px;
     border-style: solid;
     border-color: var(--maincolor);
+    background-color: var(--textcolor);
 }
 
 .portfolio {
-    
+   display: block;
+   border-style: none;
+   position: relative;
+   margin: -8px;
+   border-color: var(--maincolor);
+    color: var(--front); 
+}
+
+.project p {
+
 }
 
 footer {
     display: flex;
     flex-wrap: wrap;
-    padding: 25px;
+    flex-direction: row;
+    padding-top: 25px;
     border-style: solid;
     border-color: black;
     border-width: 0.5px;
     background-color: var(--front);
+    background: linear-gradient(30deg, #3f87a6, #ebf8e1, #241d8a);
 }
 
 footer ul {
@@ -102,11 +115,12 @@ footer ul {
     flex-wrap: wrap-reverse;
     justify-content: space-evenly;
     list-style: inside;
-    color: var(--textcolor);
+    color: black;
 }
 
 h3 {
     display: block;
+    text-decoration: underline;
     margin: 5px;
     color: var(--textcolor); 
 }
