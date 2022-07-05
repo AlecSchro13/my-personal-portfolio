@@ -6,6 +6,7 @@
   --maincolor: slateblue;
   --textcolor: aliceblue;
   --dark: rgb(62, 62, 62);
+  --
 }
 
 body {
@@ -50,6 +51,7 @@ main {
 }
 
 .bio {
+    display: block;
     flex: auto;
     text-align: center;
     margin: 50px;
@@ -74,6 +76,19 @@ main {
 }
 
 .business {
+    display: block;
+    flex-wrap: wrap;
+    padding: 33px;
+    float: right;
+    position: relative;
+    border-style: solid;
+    border-width: 1px;
+    width: 50%;
+    border-color: var(--textcolor);
+    background-color: ;
+}
+
+.business h2 {
 
 }
 
