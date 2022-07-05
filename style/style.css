@@ -11,57 +11,62 @@
 
 body {
     margin: 0px;
+    border-style: double;
+    border-width: 2px;
+    border-color: black;
 }
 
 header {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    direction: rtl;
+    justify-content: space-between;
     padding: 50px;
+    padding-bottom: -35px;
     background-color: var(--front);
     color: var(--textcolor);
 }
 
 h1 {
     display: block;
+
 }
 
 nav {
-
+    display: inline-flex;
+    flex-wrap: wrap-reverse;
 }
 
 nav ul {
-
+    
 }
 
 main {
- 
-
+    margin-top: 5px;
 }
 
 .bio {
-
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
 }
 
 .bio h2 {
-   
-    
+   display: inline-block;
+   float: left;
+   position: relative;
 }
 
 .bio p {
+    display: block;
+    float: right;
+    position: relative;
+}
+
+.project {
     
-}
-
-.business {
-   
-}
-
-.business h2 {
-
-}
-
-.personal {
-
 }
 
 footer {
