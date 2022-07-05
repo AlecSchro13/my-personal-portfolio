@@ -18,18 +18,17 @@ body {
 
 header {
     display: flex;
+    flex: 1 0 0;
     flex-wrap: wrap;
     direction: rtl;
     justify-content: space-between;
     padding: 50px;
-    padding-bottom: -35px;
     background-color: var(--front);
     color: var(--textcolor);
 }
 
 h1 {
-    display: block;
-
+    text-decoration: underline;
 }
 
 nav {
@@ -38,7 +37,7 @@ nav {
 }
 
 nav ul {
-    
+    display: inline-block;
 }
 
 main {
@@ -54,23 +53,28 @@ main {
 }
 
 .bio h2 {
-   display: inline-block;
+   display: flex;
    float: left;
-   position: relative;
+   position: static;
 }
 
 .bio p {
-    display: block;
+    display: flex;
     float: right;
     position: relative;
 }
 
 .project {
-    
+    display: flex;
+    flex-direction: column-reverse;
+    width: 25%;
+    height: 25%;
+    border-style: solid;
+    border-color: var(--maincolor);
 }
 
 footer {
-    display: block;
+    display: flex;
     flex-wrap: wrap;
     padding: 25px;
     background-color: var(--front);
