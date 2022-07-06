@@ -78,27 +78,21 @@ h2 {
 
 #business,
 
-#project-one,
+#one,
 
-#project-two,
+#two,
 
-#project-three,
+#three,
 
 #personal {
     border-style: solid;
     border-width: 0.5px;
     padding: 15px;
     width: 30%;
-    height: 100px;
+    height: 150px;
     flex: 1;
     box-shadow: 3px 5px 2px var(--behind);
     margin: 12px;
-}
-
-.personal, .project-one, .business, .project-two, .project-three {
-    max-width: fit-content;
-    max-height: fit-content;
-    position: relative;
 }
 
 footer {
@@ -126,9 +120,9 @@ h3 {
 }
 
 .info {
-    display: inline-flexbox;
+    display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    
 }
 
 @media screen and (min-width: 768px){
