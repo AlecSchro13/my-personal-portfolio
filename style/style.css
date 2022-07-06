@@ -99,6 +99,20 @@ h2 {
     margin: 30px;
 }
 
+#business,
+
+#one,
+
+#two,
+
+#three,
+
+#personal:hover {
+    max-width: max-content;
+    max-height: max-content;
+    max-block-size: 400px;
+}
+
 footer {
     width: 100%;
     bottom: 0;
