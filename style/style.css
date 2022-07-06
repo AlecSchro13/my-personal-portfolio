@@ -52,7 +52,7 @@ main {
     flex-direction: column;
 }
 
-.bio {
+#bio {
     border-style: solid;
     border-width: 1px;
     border-radius: 50px;
@@ -76,15 +76,15 @@ h2 {
     font-size: 20px;
 }
 
-.business,
+#business,
 
-.project-one,
+#project-one,
 
-.project-two,
+#project-two,
 
-.project-three,
+#project-three,
 
-.personal {
+#personal {
     border-style: solid;
     border-width: 0.5px;
     padding: 15px;
@@ -95,8 +95,10 @@ h2 {
     margin: 12px;
 }
 
-.personal {
-
+.personal, .project-one, .business, .project-two, .project-three {
+    max-width: fit-content;
+    max-height: fit-content;
+    position: relative;
 }
 
 footer {
@@ -104,7 +106,7 @@ footer {
     bottom: 0;
     padding: 10px;
     text-align: center;
-    background: var(--front);
+    background-color: var(--front);
     color: var(--textcolor);
     margin-top: auto;
 }
@@ -118,6 +120,7 @@ footer {
     font-size: smaller;
 }
 
+
 h3 {
     float: left;
 }
@@ -128,20 +131,14 @@ h3 {
     justify-content: space-evenly;
 }
 
-@media screen and (min-width: 1200px){
-    .bio .project {
-        max-width: 100%;
+@media screen and (min-width: 768px){
+    body {
+        
     }
 }
 
 @media screen and (min-width: 992px) {
-    .bio .project {
-        max-width: 100%;
-    }
-}
-
-@media screen and (min-width: 768x) {
-    .bio .project {
-        max-width: 100%;
+    body {
+        
     }
 }
